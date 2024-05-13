@@ -12,7 +12,7 @@ const PARTICLE_SET = [TestParticle1(), TestParticle2(), TestParticle3(), TestPar
     TestProcess(rng,incoming_particles,outgoing_particles)
 
 """
-struct TestProcess{IP<:AbstractVector,OP<:AbstractVector} <: AbstractProcessDefinition
+struct TestProcess{IP,OP} <: AbstractProcessDefinition
     incoming_particles::IP
     outgoing_particles::OP
 end

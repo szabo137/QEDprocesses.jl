@@ -72,8 +72,8 @@ end
 
     model = TESTMODEL
     process = TestImplementation.TestProcess(
-        SVector{2,AbstractParticle}(Electron(), Photon()),
-        SVector{2,AbstractParticle}(Electron(), Photon()),
+        (Electron(), Photon()),
+        (Electron(), Photon()),
     )
     phasespace_def = TESTPSDEF
 
